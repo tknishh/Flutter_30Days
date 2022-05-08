@@ -1,4 +1,4 @@
-# spogger
+# Flutter Essentials
 
 A new Flutter project.
 
