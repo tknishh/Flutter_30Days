@@ -9,11 +9,14 @@ class home_page extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Spogger"),
+        centerTitle: true,
+        title: Text(
+          "Spogger",
+        ),
       ),
       body: Center(
         child: Container(
-          child: Text("Welcome $days by $name!"),
+          child: Text("Welcome to $days days of Madness by $name!"),
         ),
       ),
       drawer: MyDrawer(),

@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:spogger/pages/home_page.dart';
 import 'package:spogger/pages/login_page.dart';
 import 'package:spogger/utils/routes.dart';
+import 'package:spogger/widgets/themes.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,14 +17,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       // home: home_page(),
       themeMode: ThemeMode.light,
-      theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
-        fontFamily: GoogleFonts.lato().fontFamily,
-      ),
+      theme: MyTheme.lightTheme(context),
       debugShowCheckedModeBanner: false,
-      darkTheme: ThemeData(
-        primarySwatch: Colors.grey,
-      ),
+      darkTheme: MyTheme.darkTheme(context),
       initialRoute: MyRoutes.homeRoute,
       routes: {
         "/": (context) => LoginPage(),
