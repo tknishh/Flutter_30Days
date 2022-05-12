@@ -4,9 +4,19 @@ import 'package:spogger/widgets/drawer.dart';
 
 import '../widgets/item_widget.dart';
 
-class home_page extends StatelessWidget {
+class home_page extends StatefulWidget {
+  @override
+  State<home_page> createState() => _home_pageState();
+}
+
+class _home_pageState extends State<home_page> {
   final int days = 30;
   final String name = "Tedd";
+
+  @override
+  void initState() {
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
